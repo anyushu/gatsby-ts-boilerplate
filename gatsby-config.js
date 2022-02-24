@@ -1,7 +1,7 @@
 /** @type {import('gatsby).GatsbyConfig} */
 module.exports = {
   siteMetadata: {
-    title: `new`,
+    title: `Gatsby x TypeScript Boilerplate`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -10,14 +10,14 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: './src/images/',
-      },
-      __key: 'images',
-    },
     'gatsby-plugin-postcss',
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: './src/images/',
+    //   },
+    //   __key: 'images',
+    // },
   ],
 }
